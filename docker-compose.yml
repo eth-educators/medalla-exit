@@ -1,0 +1,14 @@
+version: "3"
+services:
+  validator-voluntary-exit:
+    image: prysmaticlabs/prysm-validator:latest-debug
+    restart: "no"
+    volumes:
+      - ./.eth2/accept:/home/.eth2
+      - ./.eth2:/setup:ro
+      - ./.eth2/validator_keys:/keys:ro
+    environment:
+      - BEACON=${BEACON}
+      - TESTNET=${TESTNET}
+    entrypoint: sh
+    command: "/setup/process-exit.sh"
