@@ -1,7 +1,8 @@
 version: "3"
 services:
   validator-voluntary-exit:
-    image: prysmaticlabs/prysm-validator:latest-debug
+# This is a beta.2 image for Medalla. Change target to "stable" for Pyrmont and on
+    image: prysmaticlabs/prysm-validator:HEAD-d4c954-debug
     restart: "no"
     volumes:
       - ./.eth2/accept:/home/.eth2
