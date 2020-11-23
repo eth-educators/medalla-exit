@@ -1,3 +1,8 @@
+# Thank you for testing
+
+With Medalla testnet coming to a close, the cloud beacon for this project has been shut down. You can, of course, use this
+general idea with a beacon of your own.
+
 # Voluntary exit from Medalla testnet
 
 This project provides a workflow to exit validators that were created
